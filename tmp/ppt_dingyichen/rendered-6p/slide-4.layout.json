@@ -1,0 +1,320 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/tlmc2p",
+    "id": "tlmc2p",
+    "slide": 4,
+    "layoutId": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F8FAFA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1358
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/836t0jup",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        70,
+        64,
+        820,
+        70
+      ],
+      "geometry": "rect",
+      "text": "澳门大学让我看到更开阔的学习空间",
+      "textPreview": "澳门大学让我看到更开阔的学习空间",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "澳门大学让我看到更开阔的学习空间"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "澳门大学让我看到更开阔的学习空间",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "澳门大学让我看到更开阔的学习空间",
+              "fontSize": 38,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n2dsred4",
+      "id": "2",
+      "name": "accent-rule",
+      "bbox": [
+        70,
+        150,
+        150,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#2A6877",
+      "lineColor": "#2A6877",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/f6pwb254",
+      "id": "3",
+      "bbox": [
+        70,
+        195,
+        820,
+        850
+      ],
+      "alt": "澳门大学留影",
+      "contentType": "image/jpeg",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "c53665ae-af55-4c1b-b06c-1917947dbe74",
+        "contentType": "image/jpeg",
+        "byteLength": 162076
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xsfax8v6",
+      "id": "4",
+      "name": "body1",
+      "bbox": [
+        90,
+        1070,
+        780,
+        125
+      ],
+      "geometry": "rect",
+      "text": "来到澳门大学，宏大的建筑、宽阔的广场和整洁的校园环境给我留下了深刻印象。站在大学标志前，我不只是完成了一次留影，也开始认真想象自己未来的学习生活。",
+      "textPreview": "来到澳门大学，宏大的建筑、宽阔的广场和整洁的校园环境给我留下了深刻印象。站在大学标志前，我不只是完成了一次留影，也开始认真想象自己未来的学习生活。",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "来到澳门大学，宏大的建筑、宽阔的广场和整洁的校园环境给我留下了深刻印"
+          },
+          {
+            "index": 2,
+            "text": "象。站在大学标志前，我不只是完成了一次留影，也开始认真想象自己未来的"
+          },
+          {
+            "index": 3,
+            "text": "学习生活。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "来到澳门大学，宏大的建筑、宽阔的广场和整洁的校园环境给我留下了深刻印象。站在大学标志前，我不只是完成了一次留影，也开始认真想象自己未来的学习生活。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#38464D",
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "来到澳门大学，宏大的建筑、宽阔的广场和整洁的校园环境给我留下了深刻印象。站在大学标志前，我不只是完成了一次留影，也开始认真想象自己未来的学习生活。",
+              "fontSize": 22,
+              "color": "#38464D",
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wr6t43ul",
+      "id": "5",
+      "name": "body2",
+      "bbox": [
+        90,
+        1200,
+        780,
+        105
+      ],
+      "geometry": "rect",
+      "text": "香港大学与澳门大学各有特色，但都让我感受到知识带来的吸引力。参观大学不是简单地看建筑，而是在心里种下一颗目标的种子。",
+      "textPreview": "香港大学与澳门大学各有特色，但都让我感受到知识带来的吸引力。参观大学不是简单地看建筑，而是在心里种下一颗目标的种子。",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#2A6877",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "香港大学与澳门大学各有特色，但都让我感受到知识带来的吸引力。参观大学不是"
+          },
+          {
+            "index": 2,
+            "text": "简单地看建筑，而是在心里种下一颗目标的种子。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "香港大学与澳门大学各有特色，但都让我感受到知识带来的吸引力。参观大学不是简单地看建筑，而是在心里种下一颗目标的种子。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#2A6877",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "香港大学与澳门大学各有特色，但都让我感受到知识带来的吸引力。参观大学不是简单地看建筑，而是在心里种下一颗目标的种子。",
+              "fontSize": 21,
+              "color": "#2A6877",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

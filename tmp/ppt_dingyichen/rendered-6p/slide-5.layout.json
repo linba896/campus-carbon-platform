@@ -1,0 +1,707 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/97etnx",
+    "id": "97etnx",
+    "slide": 5,
+    "layoutId": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FCFCFA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1358
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jihori58",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        70,
+        64,
+        820,
+        70
+      ],
+      "geometry": "rect",
+      "text": "旅途中的观察，让我收获更多",
+      "textPreview": "旅途中的观察，让我收获更多",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "旅途中的观察，让我收获更多"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "旅途中的观察，让我收获更多",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "旅途中的观察，让我收获更多",
+              "fontSize": 38,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjqp0n6t",
+      "id": "2",
+      "name": "accent-rule",
+      "bbox": [
+        70,
+        150,
+        150,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#A14F35",
+      "lineColor": "#A14F35",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lkz6tsne",
+      "id": "3",
+      "name": "lead",
+      "bbox": [
+        90,
+        185,
+        780,
+        95
+      ],
+      "geometry": "rect",
+      "text": "这次港澳之行虽然时间有限，却让我从不同角度理解了旅行的意义。",
+      "textPreview": "这次港澳之行虽然时间有限，却让我从不同角度理解了旅行的意义。",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "这次港澳之行虽然时间有限，却让我从不同角度理解了旅行的意义。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "这次港澳之行虽然时间有限，却让我从不同角度理解了旅行的意义。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "这次港澳之行虽然时间有限，却让我从不同角度理解了旅行的意义。",
+              "fontSize": 25,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/atonudor",
+      "id": "4",
+      "name": "part1Title",
+      "bbox": [
+        100,
+        330,
+        260,
+        50
+      ],
+      "geometry": "rect",
+      "text": "看见不同",
+      "textPreview": "看见不同",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "看见不同"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "看见不同",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#A14F35",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "看见不同",
+              "fontSize": 27,
+              "color": "#A14F35",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bexony5w",
+      "id": "5",
+      "name": "part1",
+      "bbox": [
+        100,
+        390,
+        760,
+        165
+      ],
+      "geometry": "rect",
+      "text": "香港与澳门都拥有独特的城市风貌。现代建筑、历史文化和多元语言同时出现在日常生活中，让我意识到世界可以如此丰富。",
+      "textPreview": "香港与澳门都拥有独特的城市风貌。现代建筑、历史文化和多元语言同时出现在日常生活中，让我意识到世界可以如此丰富。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "香港与澳门都拥有独特的城市风貌。现代建筑、历史文化和多元语言同时"
+          },
+          {
+            "index": 2,
+            "text": "出现在日常生活中，让我意识到世界可以如此丰富。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "香港与澳门都拥有独特的城市风貌。现代建筑、历史文化和多元语言同时出现在日常生活中，让我意识到世界可以如此丰富。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#38464D",
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "香港与澳门都拥有独特的城市风貌。现代建筑、历史文化和多元语言同时出现在日常生活中，让我意识到世界可以如此丰富。",
+              "fontSize": 23,
+              "color": "#38464D",
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wf6pw36h",
+      "id": "6",
+      "name": "part2Title",
+      "bbox": [
+        100,
+        600,
+        260,
+        50
+      ],
+      "geometry": "rect",
+      "text": "学会观察",
+      "textPreview": "学会观察",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#2A6877",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "学会观察"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "学会观察",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#2A6877",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "学会观察",
+              "fontSize": 27,
+              "color": "#2A6877",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xgf6p8n2",
+      "id": "7",
+      "name": "part2",
+      "bbox": [
+        100,
+        660,
+        760,
+        165
+      ],
+      "geometry": "rect",
+      "text": "旅途中，我会留意校园的建筑、道路的秩序和人们的生活节奏。只有认真观察，照片背后的风景才会变成真正属于自己的体验。",
+      "textPreview": "旅途中，我会留意校园的建筑、道路的秩序和人们的生活节奏。只有认真观察，照片背后的风景才会变成真正属于自己的体验。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "旅途中，我会留意校园的建筑、道路的秩序和人们的生活节奏。只有认真"
+          },
+          {
+            "index": 2,
+            "text": "观察，照片背后的风景才会变成真正属于自己的体验。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "旅途中，我会留意校园的建筑、道路的秩序和人们的生活节奏。只有认真观察，照片背后的风景才会变成真正属于自己的体验。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#38464D",
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "旅途中，我会留意校园的建筑、道路的秩序和人们的生活节奏。只有认真观察，照片背后的风景才会变成真正属于自己的体验。",
+              "fontSize": 23,
+              "color": "#38464D",
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ups76xov",
+      "id": "8",
+      "name": "part3Title",
+      "bbox": [
+        100,
+        870,
+        260,
+        50
+      ],
+      "geometry": "rect",
+      "text": "确定方向",
+      "textPreview": "确定方向",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "确定方向"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "确定方向",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#A14F35",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "确定方向",
+              "fontSize": 27,
+              "color": "#A14F35",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fa1oz25g",
+      "id": "9",
+      "name": "part3",
+      "bbox": [
+        100,
+        930,
+        760,
+        185
+      ],
+      "geometry": "rect",
+      "text": "两所大学带给我的最大启发，是让我对未来有了更清晰的期待。想要走进更广阔的校园，需要从现在开始积累知识、培养习惯，并保持好奇心。",
+      "textPreview": "两所大学带给我的最大启发，是让我对未来有了更清晰的期待。想要走进更广阔的校园，需要从现在开始积累知识、培养习惯，并保持好奇心。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "两所大学带给我的最大启发，是让我对未来有了更清晰的期待。想要走进"
+          },
+          {
+            "index": 2,
+            "text": "更广阔的校园，需要从现在开始积累知识、培养习惯，并保持好奇心。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "两所大学带给我的最大启发，是让我对未来有了更清晰的期待。想要走进更广阔的校园，需要从现在开始积累知识、培养习惯，并保持好奇心。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#38464D",
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "两所大学带给我的最大启发，是让我对未来有了更清晰的期待。想要走进更广阔的校园，需要从现在开始积累知识、培养习惯，并保持好奇心。",
+              "fontSize": 23,
+              "color": "#38464D",
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ud0j6hw",
+      "id": "10",
+      "name": "closing",
+      "bbox": [
+        100,
+        1195,
+        760,
+        70
+      ],
+      "geometry": "rect",
+      "text": "旅行拓宽眼界，目标推动成长。",
+      "textPreview": "旅行拓宽眼界，目标推动成长。",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 28,
+        "typeface": "+mn-lt",
+        "color": "#2A6877",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "旅行拓宽眼界，目标推动成长。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "旅行拓宽眼界，目标推动成长。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "color": "#2A6877",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "旅行拓宽眼界，目标推动成长。",
+              "fontSize": 28,
+              "color": "#2A6877",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

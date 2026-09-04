@@ -1,0 +1,315 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/j93e7t",
+    "id": "j93e7t",
+    "slide": 3,
+    "layoutId": "425d1e18-4225-44d3-bd05-dd4ee415b2dd",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F8FAFA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1358
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "425d1e18-4225-44d3-bd05-dd4ee415b2dd",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kfetsbyx",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        70,
+        64,
+        820,
+        70
+      ],
+      "geometry": "rect",
+      "text": "澳门大学：向更远处眺望",
+      "textPreview": "澳门大学：向更远处眺望",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "澳门大学：向更远处眺望"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "澳门大学：向更远处眺望",
+          "lineSpacingPercent": 135000,
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.35
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "澳门大学：向更远处眺望",
+              "fontSize": 38,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.35
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zu5czqxc",
+      "id": "2",
+      "bbox": [
+        70,
+        150,
+        150,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#2A6877",
+      "lineColor": "#2A6877",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/3yhwzypw",
+      "id": "3",
+      "bbox": [
+        70,
+        190,
+        820,
+        900
+      ],
+      "alt": "澳门大学留影",
+      "contentType": "image/jpeg",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "6d21248c-2635-42a4-b276-8a7f56c25a47",
+        "contentType": "image/jpeg",
+        "byteLength": 162076
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9k7up0fe",
+      "id": "4",
+      "name": "body",
+      "bbox": [
+        90,
+        1120,
+        780,
+        135
+      ],
+      "geometry": "rect",
+      "text": "站在澳门大学的校园里，宏大的建筑与开阔的空间让我印象深刻。港澳之行让我明白，读书不仅发生在课堂中，也发生在每一次出发、观察与思考之中。",
+      "textPreview": "站在澳门大学的校园里，宏大的建筑与开阔的空间让我印象深刻。港澳之行让我明白，读书不仅发生在课堂中，也发生在每一次出发、观察与思考之中。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "站在澳门大学的校园里，宏大的建筑与开阔的空间让我印象深刻。港澳之行"
+          },
+          {
+            "index": 2,
+            "text": "让我明白，读书不仅发生在课堂中，也发生在每一次出发、观察与思考之中"
+          },
+          {
+            "index": 3,
+            "text": "。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "站在澳门大学的校园里，宏大的建筑与开阔的空间让我印象深刻。港澳之行让我明白，读书不仅发生在课堂中，也发生在每一次出发、观察与思考之中。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#38464D",
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "站在澳门大学的校园里，宏大的建筑与开阔的空间让我印象深刻。港澳之行让我明白，读书不仅发生在课堂中，也发生在每一次出发、观察与思考之中。",
+              "fontSize": 23,
+              "color": "#38464D",
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jydwvy9",
+      "id": "5",
+      "name": "closing",
+      "bbox": [
+        90,
+        1260,
+        780,
+        50
+      ],
+      "geometry": "rect",
+      "text": "带着好奇出发，带着新的目标归来。",
+      "textPreview": "带着好奇出发，带着新的目标归来。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#2A6877",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "带着好奇出发，带着新的目标归来。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "带着好奇出发，带着新的目标归来。",
+          "lineSpacingPercent": 135000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#2A6877",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.35
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "带着好奇出发，带着新的目标归来。",
+              "fontSize": 24,
+              "color": "#2A6877",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.35
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

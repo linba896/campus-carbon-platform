@@ -1,0 +1,446 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/9tpzew",
+    "id": "9tpzew",
+    "slide": 1,
+    "layoutId": "425d1e18-4225-44d3-bd05-dd4ee415b2dd",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FCFCFA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1358
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "425d1e18-4225-44d3-bd05-dd4ee415b2dd",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v21oz6dw",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        90,
+        70,
+        780,
+        82
+      ],
+      "geometry": "rect",
+      "text": "假期里的港澳见闻",
+      "textPreview": "假期里的港澳见闻",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 42,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "假期里的港澳见闻"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "假期里的港澳见闻",
+          "lineSpacingPercent": 135000,
+          "resolvedTextStyle": {
+            "fontSize": 42,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.35
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "假期里的港澳见闻",
+              "fontSize": 42,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.35
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3ap8beh",
+      "id": "2",
+      "name": "identity",
+      "bbox": [
+        90,
+        150,
+        780,
+        40
+      ],
+      "geometry": "rect",
+      "text": "534班  丁奕辰",
+      "textPreview": "534班  丁奕辰",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "534班  丁奕辰"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "534班  丁奕辰",
+          "lineSpacingPercent": 135000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#A14F35",
+            "alignment": "center",
+            "lineSpacing": 1.35
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "534班  丁奕辰",
+              "fontSize": 20,
+              "color": "#A14F35",
+              "alignment": "center",
+              "lineSpacing": 1.35
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4j61gv2",
+      "id": "3",
+      "bbox": [
+        410,
+        206,
+        140,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#A14F35",
+      "lineColor": "#A14F35",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/md8n21wf",
+      "id": "4",
+      "name": "reflection",
+      "bbox": [
+        120,
+        235,
+        720,
+        430
+      ],
+      "geometry": "rect",
+      "text": "这个假期，我走进香港与澳门，在不同的城市风景中感受文化的交融。\n\n参观香港大学和澳门大学，让我看到了各具特色的校园建筑，也体会到浓厚、开放的学习氛围。旅途中，我还来到香港迪士尼，在欢乐的体验里留下难忘的回忆。\n\n一次旅行，不只是欣赏风景，更是开阔眼界、认识世界。愿这些珍贵的瞬间，成为成长路上温暖而明亮的印记。",
+      "textPreview": "这个假期，我走进香港与澳门，在不同的城市风景中感受文化的交融。 |  | 参观香港大学和澳门大学，让我看到了各具特色的校园建筑，也体会到浓厚、开放的学习氛围。旅途中，我还来到香港迪士尼，在欢乐的体验里留下难忘的回忆。 |  | 一次旅行，不只是欣赏风景，更是开阔眼界、认识世...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#343434",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 9,
+        "lines": [
+          {
+            "index": 1,
+            "text": "这个假期，我走进香港与澳门，在不同的城市风景中感受文化的交"
+          },
+          {
+            "index": 2,
+            "text": "融。"
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": "参观香港大学和澳门大学，让我看到了各具特色的校园建筑，也体"
+          },
+          {
+            "index": 5,
+            "text": "会到浓厚、开放的学习氛围。旅途中，我还来到香港迪士尼，在欢"
+          },
+          {
+            "index": 6,
+            "text": "乐的体验里留下难忘的回忆。"
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": "一次旅行，不只是欣赏风景，更是开阔眼界、认识世界。愿这些珍"
+          },
+          {
+            "index": 9,
+            "text": "贵的瞬间，成为成长路上温暖而明亮的印记。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "这个假期，我走进香港与澳门，在不同的城市风景中感受文化的交融。",
+          "lineSpacingPercent": 155000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#343434",
+            "alignment": "left",
+            "lineSpacing": 1.55
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "这个假期，我走进香港与澳门，在不同的城市风景中感受文化的交融。",
+              "fontSize": 24,
+              "color": "#343434",
+              "alignment": "left",
+              "lineSpacing": 1.55
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "参观香港大学和澳门大学，让我看到了各具特色的校园建筑，也体会到浓厚、开放的学习氛围。旅途中，我还来到香港迪士尼，在欢乐的体验里留下难忘的回忆。",
+          "lineSpacingPercent": 155000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#343434",
+            "alignment": "left",
+            "lineSpacing": 1.55
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "参观香港大学和澳门大学，让我看到了各具特色的校园建筑，也体会到浓厚、开放的学习氛围。旅途中，我还来到香港迪士尼，在欢乐的体验里留下难忘的回忆。",
+              "fontSize": 24,
+              "color": "#343434",
+              "alignment": "left",
+              "lineSpacing": 1.55
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "一次旅行，不只是欣赏风景，更是开阔眼界、认识世界。愿这些珍贵的瞬间，成为成长路上温暖而明亮的印记。",
+          "lineSpacingPercent": 155000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#343434",
+            "alignment": "left",
+            "lineSpacing": 1.55
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "一次旅行，不只是欣赏风景，更是开阔眼界、认识世界。愿这些珍贵的瞬间，成为成长路上温暖而明亮的印记。",
+              "fontSize": 24,
+              "color": "#343434",
+              "alignment": "left",
+              "lineSpacing": 1.55
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/al8zet83",
+      "id": "5",
+      "bbox": [
+        110,
+        715,
+        740,
+        555
+      ],
+      "alt": "香港大学校景",
+      "contentType": "image/jpeg",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "49559ed2-9042-4145-989f-0b4273105fb7",
+        "contentType": "image/jpeg",
+        "byteLength": 1457529
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8fq54bel",
+      "id": "6",
+      "name": "caption",
+      "bbox": [
+        110,
+        1276,
+        740,
+        38
+      ],
+      "geometry": "rect",
+      "text": "香港大学 · 在校园中感受历史与现代",
+      "textPreview": "香港大学 · 在校园中感受历史与现代",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#5F6A70",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "香港大学 · 在校园中感受历史与现代"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "香港大学 · 在校园中感受历史与现代",
+          "lineSpacingPercent": 135000,
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#5F6A70",
+            "alignment": "center",
+            "lineSpacing": 1.35
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "香港大学 · 在校园中感受历史与现代",
+              "fontSize": 17,
+              "color": "#5F6A70",
+              "alignment": "center",
+              "lineSpacing": 1.35
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

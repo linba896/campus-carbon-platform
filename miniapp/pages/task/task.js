@@ -1,0 +1,1 @@
+Page({data:{job:null,pay:false},onLoad(q){this.setData({job:getApp().globalData.jobs.find(x=>x.id===Number(q.id))})},unlock(){this.setData({pay:true})},close(){this.setData({pay:false})},noop(){},confirm(){wx.showModal({title:'接入微信支付',content:'上线时需由服务端生成支付签名，并在这里调用 wx.requestPayment。',showCancel:false})}})

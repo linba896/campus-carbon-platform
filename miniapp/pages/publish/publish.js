@@ -1,0 +1,1 @@
+Page({data:{types:['航拍宣传','测绘巡检','农业植保','其他'],type:0},pick(e){this.setData({type:Number(e.detail.value)})},submit(e){const v=e.detail.value;if(!v.title||!v.city||!v.budget){wx.showToast({title:'请完善必填信息',icon:'none'});return}wx.showModal({title:'发布成功',content:'需求已提交审核，通过后将开始匹配认证飞手。',showCancel:false})}})

@@ -1,0 +1,497 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/suty6a",
+    "id": "suty6a",
+    "slide": 6,
+    "layoutId": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F4F7F6",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1358
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8je9cjap",
+      "id": "1",
+      "name": "eyebrow",
+      "bbox": [
+        90,
+        105,
+        780,
+        42
+      ],
+      "geometry": "rect",
+      "text": "假期感悟",
+      "textPreview": "假期感悟",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "假期感悟"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "假期感悟",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#A14F35",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "假期感悟",
+              "fontSize": 22,
+              "color": "#A14F35",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7i5s3et4",
+      "id": "2",
+      "name": "title",
+      "bbox": [
+        90,
+        175,
+        780,
+        110
+      ],
+      "geometry": "rect",
+      "text": "带着好奇出发，带着目标归来",
+      "textPreview": "带着好奇出发，带着目标归来",
+      "resolvedFontSize": 43,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 43,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "带着好奇出发，带着目标归来"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "带着好奇出发，带着目标归来",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 43,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "带着好奇出发，带着目标归来",
+              "fontSize": 43,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhcra9sj",
+      "id": "3",
+      "bbox": [
+        395,
+        315,
+        170,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#2A6877",
+      "lineColor": "#2A6877",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lg3a1obe",
+      "id": "4",
+      "name": "body",
+      "bbox": [
+        130,
+        390,
+        700,
+        545
+      ],
+      "geometry": "rect",
+      "text": "港澳之行给我的，不只是四张照片和几处景点的回忆。它让我亲眼看到不同的校园，感受到多元文化，也让我更加珍惜与家人一起旅行的时光。\n\n回到熟悉的学习生活后，这些见闻仍会提醒我：外面的世界很大，值得去了解；未来的道路很长，需要一步一步认真走。\n\n我会把旅行中的新鲜感转化为学习中的动力，保持观察、思考和探索，在成长的路上遇见更好的自己。",
+      "textPreview": "港澳之行给我的，不只是四张照片和几处景点的回忆。它让我亲眼看到不同的校园，感受到多元文化，也让我更加珍惜与家人一起旅行的时光。 |  | 回到熟悉的学习生活后，这些见闻仍会提醒我：外面的世界很大，值得去了解；未来的道路很长，需要一步一步认真走。 |  | 我会把旅行中的新鲜...",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 9,
+        "lines": [
+          {
+            "index": 1,
+            "text": "港澳之行给我的，不只是四张照片和几处景点的回忆。它让我"
+          },
+          {
+            "index": 2,
+            "text": "亲眼看到不同的校园，感受到多元文化，也让我更加珍惜与家"
+          },
+          {
+            "index": 3,
+            "text": "人一起旅行的时光。"
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": "回到熟悉的学习生活后，这些见闻仍会提醒我：外面的世界很"
+          },
+          {
+            "index": 6,
+            "text": "大，值得去了解；未来的道路很长，需要一步一步认真走。"
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": "我会把旅行中的新鲜感转化为学习中的动力，保持观察、思考"
+          },
+          {
+            "index": 9,
+            "text": "和探索，在成长的路上遇见更好的自己。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "港澳之行给我的，不只是四张照片和几处景点的回忆。它让我亲眼看到不同的校园，感受到多元文化，也让我更加珍惜与家人一起旅行的时光。",
+          "lineSpacingPercent": 160000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#38464D",
+            "alignment": "center",
+            "lineSpacing": 1.6
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "港澳之行给我的，不只是四张照片和几处景点的回忆。它让我亲眼看到不同的校园，感受到多元文化，也让我更加珍惜与家人一起旅行的时光。",
+              "fontSize": 25,
+              "color": "#38464D",
+              "alignment": "center",
+              "lineSpacing": 1.6
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "回到熟悉的学习生活后，这些见闻仍会提醒我：外面的世界很大，值得去了解；未来的道路很长，需要一步一步认真走。",
+          "lineSpacingPercent": 160000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#38464D",
+            "alignment": "center",
+            "lineSpacing": 1.6
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "回到熟悉的学习生活后，这些见闻仍会提醒我：外面的世界很大，值得去了解；未来的道路很长，需要一步一步认真走。",
+              "fontSize": 25,
+              "color": "#38464D",
+              "alignment": "center",
+              "lineSpacing": 1.6
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "我会把旅行中的新鲜感转化为学习中的动力，保持观察、思考和探索，在成长的路上遇见更好的自己。",
+          "lineSpacingPercent": 160000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#38464D",
+            "alignment": "center",
+            "lineSpacing": 1.6
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "我会把旅行中的新鲜感转化为学习中的动力，保持观察、思考和探索，在成长的路上遇见更好的自己。",
+              "fontSize": 25,
+              "color": "#38464D",
+              "alignment": "center",
+              "lineSpacing": 1.6
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kfu98jat",
+      "id": "5",
+      "name": "quote",
+      "bbox": [
+        105,
+        1010,
+        750,
+        90
+      ],
+      "geometry": "rect",
+      "text": "愿每一次出发，都成为下一次成长的起点。",
+      "textPreview": "愿每一次出发，都成为下一次成长的起点。",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "愿每一次出发，都成为下一次成长的起点。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "愿每一次出发，都成为下一次成长的起点。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "color": "#A14F35",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "愿每一次出发，都成为下一次成长的起点。",
+              "fontSize": 29,
+              "color": "#A14F35",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zelszet8",
+      "id": "6",
+      "name": "identity",
+      "bbox": [
+        105,
+        1165,
+        750,
+        50
+      ],
+      "geometry": "rect",
+      "text": "534班  丁奕辰",
+      "textPreview": "534班  丁奕辰",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#68747A",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "534班  丁奕辰"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "534班  丁奕辰",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#68747A",
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "534班  丁奕辰",
+              "fontSize": 22,
+              "color": "#68747A",
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

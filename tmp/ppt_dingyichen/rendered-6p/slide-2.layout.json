@@ -1,0 +1,549 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/37n55z",
+    "id": "37n55z",
+    "slide": 2,
+    "layoutId": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FCFCFA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1358
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ulc7e5oz",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        70,
+        64,
+        820,
+        70
+      ],
+      "geometry": "rect",
+      "text": "走进香港大学，感受开放的校园",
+      "textPreview": "走进香港大学，感受开放的校园",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "走进香港大学，感受开放的校园"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "走进香港大学，感受开放的校园",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "走进香港大学，感受开放的校园",
+              "fontSize": 38,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h83q9kna",
+      "id": "2",
+      "name": "accent-rule",
+      "bbox": [
+        70,
+        150,
+        150,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#A14F35",
+      "lineColor": "#A14F35",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/t8napovu",
+      "id": "3",
+      "bbox": [
+        70,
+        195,
+        430,
+        1010
+      ],
+      "alt": "香港大学留影",
+      "contentType": "image/jpeg",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "b4f8f48e-d305-408f-b2a5-f1de44374c29",
+        "contentType": "image/jpeg",
+        "byteLength": 261341
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3a58bu5g",
+      "id": "4",
+      "name": "section",
+      "bbox": [
+        540,
+        220,
+        350,
+        55
+      ],
+      "geometry": "rect",
+      "text": "红砖与绿意之间",
+      "textPreview": "红砖与绿意之间",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "红砖与绿意之间"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "红砖与绿意之间",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#A14F35",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "红砖与绿意之间",
+              "fontSize": 27,
+              "color": "#A14F35",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9wripov",
+      "id": "5",
+      "name": "body1",
+      "bbox": [
+        540,
+        295,
+        350,
+        250
+      ],
+      "geometry": "rect",
+      "text": "走进香港大学，最先吸引我的是校园里的红砖建筑。它们与玻璃幕墙、绿树和水景相互映衬，既保留了历史感，又充满现代气息。",
+      "textPreview": "走进香港大学，最先吸引我的是校园里的红砖建筑。它们与玻璃幕墙、绿树和水景相互映衬，既保留了历史感，又充满现代气息。",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "走进香港大学，最先吸引我的是校"
+          },
+          {
+            "index": 2,
+            "text": "园里的红砖建筑。它们与玻璃幕墙"
+          },
+          {
+            "index": 3,
+            "text": "、绿树和水景相互映衬，既保留了"
+          },
+          {
+            "index": 4,
+            "text": "历史感，又充满现代气息。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "走进香港大学，最先吸引我的是校园里的红砖建筑。它们与玻璃幕墙、绿树和水景相互映衬，既保留了历史感，又充满现代气息。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#38464D",
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "走进香港大学，最先吸引我的是校园里的红砖建筑。它们与玻璃幕墙、绿树和水景相互映衬，既保留了历史感，又充满现代气息。",
+              "fontSize": 22,
+              "color": "#38464D",
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5cnqdknm",
+      "id": "6",
+      "name": "body2",
+      "bbox": [
+        540,
+        570,
+        350,
+        285
+      ],
+      "geometry": "rect",
+      "text": "站在校园中，我能感受到一种安静而开放的学习氛围。来往的师生步伐匆匆，不同语言和文化在这里交汇，让我对大学生活产生了更多向往。",
+      "textPreview": "站在校园中，我能感受到一种安静而开放的学习氛围。来往的师生步伐匆匆，不同语言和文化在这里交汇，让我对大学生活产生了更多向往。",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "站在校园中，我能感受到一种安静"
+          },
+          {
+            "index": 2,
+            "text": "而开放的学习氛围。来往的师生步"
+          },
+          {
+            "index": 3,
+            "text": "伐匆匆，不同语言和文化在这里交"
+          },
+          {
+            "index": 4,
+            "text": "汇，让我对大学生活产生了更多向"
+          },
+          {
+            "index": 5,
+            "text": "往。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "站在校园中，我能感受到一种安静而开放的学习氛围。来往的师生步伐匆匆，不同语言和文化在这里交汇，让我对大学生活产生了更多向往。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#38464D",
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "站在校园中，我能感受到一种安静而开放的学习氛围。来往的师生步伐匆匆，不同语言和文化在这里交汇，让我对大学生活产生了更多向往。",
+              "fontSize": 22,
+              "color": "#38464D",
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4be9kf61",
+      "id": "7",
+      "name": "body3",
+      "bbox": [
+        540,
+        885,
+        350,
+        230
+      ],
+      "geometry": "rect",
+      "text": "这次参观让我明白，一所大学不仅有漂亮的建筑，更重要的是它能够给人提供思考、交流和探索的空间。",
+      "textPreview": "这次参观让我明白，一所大学不仅有漂亮的建筑，更重要的是它能够给人提供思考、交流和探索的空间。",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#38464D",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "这次参观让我明白，一所大学不仅"
+          },
+          {
+            "index": 2,
+            "text": "有漂亮的建筑，更重要的是它能够"
+          },
+          {
+            "index": 3,
+            "text": "给人提供思考、交流和探索的空间"
+          },
+          {
+            "index": 4,
+            "text": "。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "这次参观让我明白，一所大学不仅有漂亮的建筑，更重要的是它能够给人提供思考、交流和探索的空间。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#38464D",
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "这次参观让我明白，一所大学不仅有漂亮的建筑，更重要的是它能够给人提供思考、交流和探索的空间。",
+              "fontSize": 22,
+              "color": "#38464D",
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/je18zq5c",
+      "id": "8",
+      "name": "takeaway",
+      "bbox": [
+        540,
+        1160,
+        350,
+        86
+      ],
+      "geometry": "rect",
+      "text": "看见校园，也看见未来的可能。",
+      "textPreview": "看见校园，也看见未来的可能。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "看见校园，也看见未来的可能。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "看见校园，也看见未来的可能。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#A14F35",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "看见校园，也看见未来的可能。",
+              "fontSize": 23,
+              "color": "#A14F35",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

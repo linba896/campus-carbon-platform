@@ -1,0 +1,523 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/52mxkb",
+    "id": "52mxkb",
+    "slide": 2,
+    "layoutId": "425d1e18-4225-44d3-bd05-dd4ee415b2dd",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FCFCFA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1358
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "425d1e18-4225-44d3-bd05-dd4ee415b2dd",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "70f6a13b-a26b-4bf3-882a-8ff51040c644",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n25kvitk",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        70,
+        64,
+        820,
+        70
+      ],
+      "geometry": "rect",
+      "text": "香港：校园与欢乐相遇",
+      "textPreview": "香港：校园与欢乐相遇",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "香港：校园与欢乐相遇"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "香港：校园与欢乐相遇",
+          "lineSpacingPercent": 135000,
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.35
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "香港：校园与欢乐相遇",
+              "fontSize": 38,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.35
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/onelonu5",
+      "id": "2",
+      "bbox": [
+        70,
+        150,
+        150,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#A14F35",
+      "lineColor": "#A14F35",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9o72xsbq",
+      "id": "3",
+      "name": "intro",
+      "bbox": [
+        70,
+        180,
+        820,
+        130
+      ],
+      "geometry": "rect",
+      "text": "红砖、绿意与现代建筑交织，香港大学给我留下了沉稳而有活力的印象。走进迪士尼，城堡与欢笑又让旅程多了一份轻松和奇妙。",
+      "textPreview": "红砖、绿意与现代建筑交织，香港大学给我留下了沉稳而有活力的印象。走进迪士尼，城堡与欢笑又让旅程多了一份轻松和奇妙。",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#3C474D",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "红砖、绿意与现代建筑交织，香港大学给我留下了沉稳而有活力的印象。走进"
+          },
+          {
+            "index": 2,
+            "text": "迪士尼，城堡与欢笑又让旅程多了一份轻松和奇妙。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "红砖、绿意与现代建筑交织，香港大学给我留下了沉稳而有活力的印象。走进迪士尼，城堡与欢笑又让旅程多了一份轻松和奇妙。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#3C474D",
+            "alignment": "left",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "红砖、绿意与现代建筑交织，香港大学给我留下了沉稳而有活力的印象。走进迪士尼，城堡与欢笑又让旅程多了一份轻松和奇妙。",
+              "fontSize": 23,
+              "color": "#3C474D",
+              "alignment": "left",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/vmlwz2lo",
+      "id": "4",
+      "bbox": [
+        70,
+        345,
+        400,
+        780
+      ],
+      "alt": "香港大学留影",
+      "contentType": "image/jpeg",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "871260a4-ca2b-49fd-80ab-9bed3aad1561",
+        "contentType": "image/jpeg",
+        "byteLength": 261341
+      }
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/ulcvqhkj",
+      "id": "5",
+      "bbox": [
+        500,
+        345,
+        390,
+        780
+      ],
+      "alt": "香港迪士尼留影",
+      "contentType": "image/jpeg",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "3350c66e-8750-4e24-91df-dc62c76dfc88",
+        "contentType": "image/jpeg",
+        "byteLength": 216707
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0zelk3u9",
+      "id": "6",
+      "name": "hkuLabel",
+      "bbox": [
+        70,
+        1145,
+        400,
+        92
+      ],
+      "geometry": "rect",
+      "text": "香港大学\n感受开放的校园气息",
+      "textPreview": "香港大学 | 感受开放的校园气息",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "香港大学"
+          },
+          {
+            "index": 2,
+            "text": "感受开放的校园气息"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "香港大学",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#A14F35",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.2
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "香港大学",
+              "fontSize": 20,
+              "color": "#A14F35",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.2
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "感受开放的校园气息",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#A14F35",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.2
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "感受开放的校园气息",
+              "fontSize": 20,
+              "color": "#A14F35",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.2
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/10n2t8bu",
+      "id": "7",
+      "name": "disneyLabel",
+      "bbox": [
+        500,
+        1145,
+        390,
+        92
+      ],
+      "geometry": "rect",
+      "text": "香港迪士尼\n收藏快乐的假期瞬间",
+      "textPreview": "香港迪士尼 | 收藏快乐的假期瞬间",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#2A6877",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "香港迪士尼"
+          },
+          {
+            "index": 2,
+            "text": "收藏快乐的假期瞬间"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "香港迪士尼",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#2A6877",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.2
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "香港迪士尼",
+              "fontSize": 20,
+              "color": "#2A6877",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.2
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "收藏快乐的假期瞬间",
+          "lineSpacingPercent": 120000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#2A6877",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.2
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "收藏快乐的假期瞬间",
+              "fontSize": 20,
+              "color": "#2A6877",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.2
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ytg3uxc7",
+      "id": "8",
+      "name": "footer",
+      "bbox": [
+        70,
+        1260,
+        820,
+        46
+      ],
+      "geometry": "rect",
+      "text": "看见不同，也发现更广阔的世界。",
+      "textPreview": "看见不同，也发现更广阔的世界。",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#5F6A70",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "看见不同，也发现更广阔的世界。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "看见不同，也发现更广阔的世界。",
+          "lineSpacingPercent": 135000,
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#5F6A70",
+            "alignment": "center",
+            "lineSpacing": 1.35
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "看见不同，也发现更广阔的世界。",
+              "fontSize": 20,
+              "color": "#5F6A70",
+              "alignment": "center",
+              "lineSpacing": 1.35
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

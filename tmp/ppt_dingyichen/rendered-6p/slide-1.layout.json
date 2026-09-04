@@ -1,0 +1,447 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/qhmzsb",
+    "id": "qhmzsb",
+    "slide": 1,
+    "layoutId": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FCFCFA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1358
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "88d0fdea-8fc0-4141-9cb9-c764421880a2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "94fbc5f8-fd7b-4c1a-add1-53745b911c87",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/julkn6ds",
+      "id": "1",
+      "name": "title",
+      "bbox": [
+        90,
+        62,
+        780,
+        86
+      ],
+      "geometry": "rect",
+      "text": "假期里的港澳见闻",
+      "textPreview": "假期里的港澳见闻",
+      "resolvedFontSize": 46,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 46,
+        "typeface": "+mn-lt",
+        "color": "#1E2A32",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "假期里的港澳见闻"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "假期里的港澳见闻",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 46,
+            "color": "#1E2A32",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "假期里的港澳见闻",
+              "fontSize": 46,
+              "color": "#1E2A32",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kvelgbed",
+      "id": "2",
+      "name": "identity",
+      "bbox": [
+        90,
+        151,
+        780,
+        40
+      ],
+      "geometry": "rect",
+      "text": "534班  丁奕辰",
+      "textPreview": "534班  丁奕辰",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#A14F35",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "534班  丁奕辰"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "534班  丁奕辰",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#A14F35",
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "534班  丁奕辰",
+              "fontSize": 21,
+              "color": "#A14F35",
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwnmpgvy",
+      "id": "3",
+      "bbox": [
+        410,
+        210,
+        140,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#A14F35",
+      "lineColor": "#A14F35",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a5c3a1wb",
+      "id": "4",
+      "name": "opening",
+      "bbox": [
+        105,
+        245,
+        750,
+        250
+      ],
+      "geometry": "rect",
+      "text": "这个假期，我走进香港与澳门。短短的旅程中，既有大学校园里的安静与思考，也有主题乐园里的欢笑与惊喜。不同的城市气质、校园建筑和文化氛围，让我对外面的世界有了更具体的认识。",
+      "textPreview": "这个假期，我走进香港与澳门。短短的旅程中，既有大学校园里的安静与思考，也有主题乐园里的欢笑与惊喜。不同的城市气质、校园建筑和文化氛围，让我对外面的世界有了更具体的认识。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#343434",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "这个假期，我走进香港与澳门。短短的旅程中，既有大学校园里的安"
+          },
+          {
+            "index": 2,
+            "text": "静与思考，也有主题乐园里的欢笑与惊喜。不同的城市气质、校园建"
+          },
+          {
+            "index": 3,
+            "text": "筑和文化氛围，让我对外面的世界有了更具体的认识。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "这个假期，我走进香港与澳门。短短的旅程中，既有大学校园里的安静与思考，也有主题乐园里的欢笑与惊喜。不同的城市气质、校园建筑和文化氛围，让我对外面的世界有了更具体的认识。",
+          "lineSpacingPercent": 155000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#343434",
+            "alignment": "center",
+            "lineSpacing": 1.55
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "这个假期，我走进香港与澳门。短短的旅程中，既有大学校园里的安静与思考，也有主题乐园里的欢笑与惊喜。不同的城市气质、校园建筑和文化氛围，让我对外面的世界有了更具体的认识。",
+              "fontSize": 24,
+              "color": "#343434",
+              "alignment": "center",
+              "lineSpacing": 1.55
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/6hwze543",
+      "id": "5",
+      "bbox": [
+        90,
+        535,
+        780,
+        585
+      ],
+      "alt": "香港大学校景",
+      "contentType": "image/jpeg",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "ade42840-89b3-4cb5-ab09-7ab826484474",
+        "contentType": "image/jpeg",
+        "byteLength": 1457529
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7ulcbeh",
+      "id": "6",
+      "name": "route",
+      "bbox": [
+        90,
+        1145,
+        780,
+        52
+      ],
+      "geometry": "rect",
+      "text": "香港大学  ·  香港迪士尼  ·  澳门大学",
+      "textPreview": "香港大学  ·  香港迪士尼  ·  澳门大学",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#2A6877",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "香港大学  ·  香港迪士尼  ·  澳门大学"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "香港大学  ·  香港迪士尼  ·  澳门大学",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#2A6877",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "香港大学  ·  香港迪士尼  ·  澳门大学",
+              "fontSize": 22,
+              "color": "#2A6877",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xs32lwv2",
+      "id": "7",
+      "name": "lead",
+      "bbox": [
+        105,
+        1210,
+        750,
+        82
+      ],
+      "geometry": "rect",
+      "text": "一次出发，让假期有了故事；一次观察，让成长有了新的方向。",
+      "textPreview": "一次出发，让假期有了故事；一次观察，让成长有了新的方向。",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#5F6A70",
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "一次出发，让假期有了故事；一次观察，让成长有了新的方向。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "一次出发，让假期有了故事；一次观察，让成长有了新的方向。",
+          "lineSpacingPercent": 145000,
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#5F6A70",
+            "alignment": "center",
+            "lineSpacing": 1.45
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "一次出发，让假期有了故事；一次观察，让成长有了新的方向。",
+              "fontSize": 21,
+              "color": "#5F6A70",
+              "alignment": "center",
+              "lineSpacing": 1.45
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
