@@ -10,7 +10,7 @@ import {
   CheckCircle2,
   Download,
 } from "lucide-react";
-import { raw } from "./main.jsx";
+import { raw } from "./store.js";
 import "./data.css";
 import "./map.css";
 
@@ -33,17 +33,23 @@ const headers = [
   "横坐标(%)",
   "纵坐标(%)",
 ];
-const normalize = (r) => [
-  r[0] || "未命名建筑",
-  r[1] || "其他",
-  +r[2] || 0,
-  +r[3] || 0,
-  +r[4] || 1,
-  +r[5] || 0,
-  (+r[2] || 0) > 100000 ? "high" : (+r[2] || 0) > 70000 ? "mid" : "low",
-  +r[6] || 50,
-  +r[7] || 50,
-];
+const finite = (value, fallback = 0) => Number.isFinite(Number(value)) ? Number(value) : fallback;
+const clamp = (value, min, max) => Math.min(max, Math.max(min, finite(value)));
+const normalize = (r) => {
+  const power = Math.max(0, finite(r[2]));
+  return [
+    String(r[0] || "未命名建筑").slice(0, 80),
+    types.includes(r[1]) ? r[1] : "其他",
+    power,
+    Math.max(0, finite(r[3])),
+    Math.max(0, finite(r[4])),
+    finite(r[5]),
+    power > 100000 ? "high" : power > 70000 ? "mid" : "low",
+    clamp(r[6] ?? 50, 0, 100),
+    clamp(r[7] ?? 50, 0, 100),
+  ];
+};
+const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
 
 function parseDelimited(text) {
   const lines = text.trim().split(/\r?\n/).filter(Boolean);
@@ -100,9 +106,11 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
     [tick, setTick] = useState(0),
     mapRef = useRef();
   const refresh = () => {
-    localStorage.setItem("campusCarbonData", JSON.stringify(raw));
-    localStorage.setItem("campusCarbonPeriod", period);
-    localStorage.setItem("campusCarbonQuality", quality);
+    try {
+      localStorage.setItem("campusCarbonData", JSON.stringify(raw));
+    } catch {
+      setMessage("浏览器存储空间不足，当前修改尚未持久保存，请先下载数据备份。");
+    }
     setTick((x) => x + 1);
     onChange?.();
   };
@@ -111,7 +119,8 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
       setMessage("没有识别到结构化楼宇数据，请使用下方表格手工补充。");
       return;
     }
-    raw.splice(0, raw.length, ...rows);
+    try { localStorage.setItem("campusCarbonPreviousData", JSON.stringify(raw)); } catch {}
+    raw.splice(0, raw.length, ...rows.map(normalize));
     refresh();
     setMessage(`已导入 ${rows.length} 栋建筑，能碳结果已重新计算。`);
   };
@@ -132,7 +141,7 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
         setPreview(text.slice(0, 1200));
         importRows(
           f.name.endsWith(".json")
-            ? JSON.parse(text).map(normalize)
+            ? (() => { const parsed = JSON.parse(text); if (!Array.isArray(parsed)) throw new Error("JSON 顶层必须为数组"); return parsed.map(normalize); })()
             : parseDelimited(text),
         );
       }
@@ -142,7 +151,8 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
     e.target.value = "";
   };
   const update = (i, j, v) => {
-    raw[i][j >= 6 ? j + 1 : j] = j === 0 || j === 1 ? v : +v;
+    const target = j >= 6 ? j + 1 : j;
+    raw[i][target] = j === 0 ? String(v).slice(0, 80) : j === 1 ? v : j === 4 ? Math.max(0, finite(v)) : j >= 6 ? clamp(v, 0, 100) : j === 2 || j === 3 ? Math.max(0, finite(v)) : finite(v);
     raw[i][6] = raw[i][2] > 100000 ? "high" : raw[i][2] > 70000 ? "mid" : "low";
     refresh();
   };
@@ -172,6 +182,17 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
       JSON.stringify(raw, null, 2),
       "application/json",
     );
+  const restorePrevious = () => {
+    try {
+      const previous = JSON.parse(localStorage.getItem("campusCarbonPreviousData"));
+      if (!Array.isArray(previous) || !previous.length) throw new Error();
+      raw.splice(0, raw.length, ...previous.map(normalize));
+      refresh();
+      setMessage(`已恢复导入前的 ${previous.length} 栋建筑数据。`);
+    } catch {
+      setMessage("没有可恢复的导入前数据。");
+    }
+  };
   const qualityStats = {
     buildings: raw.length,
     empty: raw.reduce((n, r) => n + r.slice(0, 5).filter((v) => v === "" || v == null).length, 0),
@@ -196,6 +217,11 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
   const uploadMap = (e) => {
     const f = e.target.files?.[0];
     if (!f) return;
+    if (![/^image\/png$/, /^image\/jpeg$/].some((rule) => rule.test(f.type)) || f.size > 5 * 1024 * 1024) {
+      setMessage("地图仅支持 5MB 以内的 PNG/JPG 图片。");
+      e.target.value = "";
+      return;
+    }
     const reader = new FileReader();
     reader.onload = () => {
       document.documentElement.style.setProperty(
@@ -223,10 +249,11 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
     const rows = raw
       .map(
         (r) =>
-          `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${((r[2] * gridFactor + r[3] * gasFactor) / 1000).toFixed(2)}</td></tr>`,
+          `<tr><td>${escapeHtml(r[0])}</td><td>${escapeHtml(r[1])}</td><td>${r[2]}</td><td>${r[3]}</td><td>${((r[2] * gridFactor + r[3] * gasFactor) / 1000).toFixed(2)}</td></tr>`,
       )
       .join("");
     const w = window.open("", "_blank");
+    if (!w) { setMessage("报告窗口被浏览器拦截，请允许本站弹出窗口后重试。"); return; }
     w.document.write(
       `<meta charset="utf-8"><title>校园能碳分析报告</title><style>body{font-family:Arial,"Microsoft YaHei";padding:48px;color:#17342e}h1{color:#126b58}table{width:100%;border-collapse:collapse;margin:24px 0}th,td{border:1px solid #dce8e3;padding:10px;text-align:left}th{background:#eaf5f1}.hero{background:#126b58;color:white;padding:24px}.hero b{font-size:32px}.meta{background:#f2f8f5;padding:14px;border-radius:8px}</style><h1>校园能碳分析报告</h1><p>生成时间：${new Date().toLocaleString()}</p><div class="meta"><b>核算月份：</b>${period}　<b>数据性质：</b>${quality}　<b>模型版本：</b>Campus-CE v1.0</div><div class="hero">核算期总碳排放<br><b>${(total / 1000).toFixed(2)} tCO₂</b></div><h2>楼宇能碳明细</h2><table><thead><tr><th>建筑</th><th>类型</th><th>用电量(kWh)</th><th>燃气量(m³)</th><th>碳排放(tCO₂)</th></tr></thead><tbody>${rows}</tbody></table><h2>数据校验摘要</h2><p>建筑数量：${qualityStats.buildings}；空值：${qualityStats.empty}；负值：${qualityStats.negative}；面积为0：${qualityStats.zeroArea}。</p><h2>核算说明</h2><p>采用能耗—碳排放耦合公式 E = Σ(AD × EF)。电力排放因子 ${gridFactor} kgCO₂/kWh，天然气排放因子 ${gasFactor} kgCO₂/m³。本报告结果用于平台演示与方案比较，不能替代审计结论。</p><script>setTimeout(()=>window.print(),300)</script>`,
     );
@@ -234,7 +261,7 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
   };
   return (
     <section className="data-page">
-      <div className="data-meta panel"><label>核算月份<input type="month" value={period} onChange={e=>{setPeriod(e.target.value);setTimeout(refresh,0)}}/></label><label>数据性质<select value={quality} onChange={e=>{setQuality(e.target.value);setTimeout(refresh,0)}}><option>真实数据</option><option>调研数据</option><option>模拟数据</option><option>估算数据</option></select></label><span>数据质量会随报告一起记录，避免把模拟结果误认为实测结果。</span></div>
+      <div className="data-meta panel"><label>核算月份<input type="month" value={period} onChange={e=>{const v=e.target.value;setPeriod(v);localStorage.setItem("campusCarbonPeriod",v)}}/></label><label>数据性质<select value={quality} onChange={e=>{const v=e.target.value;setQuality(v);localStorage.setItem("campusCarbonQuality",v)}}><option>真实数据</option><option>调研数据</option><option>模拟数据</option><option>估算数据</option></select></label><span>数据质量会随报告一起记录，避免把模拟结果误认为实测结果。</span></div>
       <div className="import-grid">
         <article className="panel import-card">
           <Upload />
@@ -257,6 +284,9 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
           </button>
           <button className="report-btn" onClick={backup}>
             <Save /> 备份数据
+          </button>
+          <button className="report-btn" onClick={restorePrevious}>
+            恢复导入前数据
           </button>
           {fileName && <small>{fileName}</small>}
           {message && (

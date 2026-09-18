@@ -19,16 +19,12 @@ import {
   X,
   Zap,
   Sparkles,
+  CheckCircle2,
 } from "lucide-react";
 import "./style.css";
 import DataCenter from "./DataCenter.jsx";
-export const raw = [
-  ["理工实验楼", "实验楼", 128400, 0, 18200, 8.4, "high", 57, 23],
-  ["学生宿舍 A 区", "宿舍", 98600, 0, 24600, -3.2, "mid", 16, 19],
-  ["第一教学楼", "教学楼", 72300, 0, 16300, -7.8, "low", 29, 53],
-  ["学生食堂", "食堂", 65800, 8600, 8200, 4.6, "high", 63, 58],
-  ["图书馆", "公共建筑", 54600, 0, 22100, -5.1, "low", 8, 69],
-];
+import History from "./History.jsx";
+import { raw } from "./store.js";
 const fmt = (v) =>
   new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 1 }).format(v);
 function Side({ open, setOpen, view, setView }) {
@@ -40,6 +36,7 @@ function Side({ open, setOpen, view, setView }) {
     ["算法参数中心", Settings2],
     ["数据与地图中心", UploadCloud],
     ["AI辅助分析", Sparkles],
+    ["月度历史与对比", Activity],
   ];
   return (
     <aside className={open ? "open" : ""}>
@@ -124,6 +121,8 @@ function Dashboard({ grid, gas }) {
   );
   let total = data.reduce((s, x) => s + x.carbon, 0),
     b = data[sel];
+  const totalPower = data.reduce((s, x) => s + x.kwh, 0);
+  const totalArea = data.reduce((s, x) => s + Math.max(x.area, 0), 0);
   const avgIntensity = data.reduce((s, x) => s + x.carbon / Math.max(x.area, 1), 0) / Math.max(data.length, 1);
   const aiInsights = data
     .map((x) => ({ ...x, intensity: x.carbon / Math.max(x.area, 1) }))
@@ -131,11 +130,12 @@ function Dashboard({ grid, gas }) {
     .sort((a, b) => (b.intensity - avgIntensity) - (a.intensity - avgIntensity));
   return (
     <>
+      {!data.length ? <section className="panel empty-state"><h2>暂无楼宇数据</h2><p>请前往“数据与地图中心”新增建筑或导入数据。</p></section> : null}
       <section className="metrics">
         <Metric
           I={Zap}
           label="本月综合能耗"
-          value="419.7"
+          value={fmt(totalPower / 1000)}
           unit="MWh"
           delta="4.2%"
         />
@@ -149,11 +149,11 @@ function Dashboard({ grid, gas }) {
         <Metric
           I={Activity}
           label="单位面积碳强度"
-          value="4.86"
+          value={totalArea > 0 ? fmt(total / totalArea) : "—"}
           unit="kgCO₂/m²"
           delta="6.1%"
         />
-        <Metric I={AlertTriangle} label="高碳预警" value="2" unit="处" warn />
+        <Metric I={AlertTriangle} label="高碳预警" value={aiInsights.length} unit="处" warn />
       </section>
       <section className="main-grid">
         <article className="panel map-panel">
@@ -188,7 +188,7 @@ function Dashboard({ grid, gas }) {
               </button>
             ))}
           </div>
-          <div className="detail">
+          {b && <div className="detail">
             <div>
               <b>{b.name}</b>
               <small>
@@ -206,7 +206,7 @@ function Dashboard({ grid, gas }) {
                 <dd>{x[1]}</dd>
               </dl>
             ))}
-          </div>
+          </div>}
         </article>
         <section className="stack">
           <article className="panel trend">
@@ -281,7 +281,7 @@ function Dashboard({ grid, gas }) {
                 </div>
                 <i>
                   <em
-                    style={{ width: (x.carbon / data[0].carbon) * 100 + "%" }}
+                    style={{ width: (x.carbon / Math.max(...data.map((d) => d.carbon), 1)) * 100 + "%" }}
                   />
                 </i>
                 <strong>{fmt(x.carbon / 1000)} t</strong>
@@ -294,24 +294,10 @@ function Dashboard({ grid, gas }) {
               <h2>智能预警与建议</h2>
               <p>算法自动识别异常点位</p>
             </div>
-            <mark>2 条待处理</mark>
+            <mark>{aiInsights.length} 条待处理</mark>
           </header>
-          <div className="alert">
-            <AlertTriangle />
-            <div>
-              <b>理工实验楼夜间基荷偏高</b>
-              <p>00:00—06:00 用电高于同类建筑均值 31%</p>
-              <small>建议检查实验设备待机与通风系统运行策略</small>
-            </div>
-          </div>
-          <div className="alert">
-            <Wind />
-            <div>
-              <b>食堂燃气单耗连续上升</b>
-              <p>近 3 周单位供餐燃气消耗上升 12.4%</p>
-              <small>建议核查蒸汽设备效率并优化启停</small>
-            </div>
-          </div>
+          {aiInsights.slice(0,2).map((x)=><div className="alert" key={x.id}><AlertTriangle/><div><b>{x.name}需重点关注</b><p>{x.intensity > avgIntensity * 1.2 ? `碳强度为校园均值的 ${fmt(x.intensity / Math.max(avgIntensity, 0.001))} 倍` : `环比上升 ${x.trend}%`}</p><small>建议核查设备运行时段，并通过仿真评估优化方案</small></div></div>)}
+          {!aiInsights.length && <div className="ai-empty">当前数据未触发预警规则。</div>}
         </article>
       </section>
       <section className="panel ai-panel">
@@ -481,7 +467,7 @@ function BuildingAnalysis({ grid, gas }) {
                   <td>
                     <strong>{fmt(r.carbon / 1000)} tCO₂</strong>
                   </td>
-                  <td>{fmt(r.carbon / r.area)} kg/m²</td>
+                  <td>{r.area > 0 ? fmt(r.carbon / r.area) : "—"} kg/m²</td>
                   <td className={r.trend > 0 ? "bad" : "good"}>
                     {r.trend > 0 ? "+" : ""}
                     {r.trend}%
@@ -513,7 +499,7 @@ function App() {
       "楼宇能碳分析",
       "节能方案仿真",
       "算法参数中心",
-      "数据与地图中心", "AI辅助分析",
+      "数据与地图中心", "AI辅助分析", "月度历史与对比",
     ];
   useEffect(() => {
     try {
@@ -530,13 +516,13 @@ function App() {
         );
       const factors = JSON.parse(localStorage.getItem("campusCarbonFactors"));
       if (factors) {
-        setGrid(factors.grid);
-        setGas(factors.gas);
+        if (Number.isFinite(factors.grid) && factors.grid >= 0) setGrid(factors.grid);
+        if (Number.isFinite(factors.gas) && factors.gas >= 0) setGas(factors.gas);
       }
     } catch {}
   }, []);
   useEffect(() => {
-    localStorage.setItem("campusCarbonFactors", JSON.stringify({ grid, gas }));
+    try { localStorage.setItem("campusCarbonFactors", JSON.stringify({ grid, gas })); } catch {}
   }, [grid, gas]);
   return (
     <div className="app">
@@ -564,8 +550,8 @@ function App() {
           ) : view === 3 ? (
             <Sim grid={grid} />
           ) : view === 4 ? (
-            <Params {...{ grid, setGrid, gas, setGas }} />
-          ) : view === 6 ? (<AIAssist grid={grid} gas={gas} />) : (
+            <Params grid={grid} gas={gas} setGrid={(v) => Number.isFinite(v) && v >= 0 && setGrid(v)} setGas={(v) => Number.isFinite(v) && v >= 0 && setGas(v)} />
+          ) : view === 7 ? (<History grid={grid} gas={gas}/>) : view === 6 ? (<AIAssist grid={grid} gas={gas} />) : (
             <DataCenter
               gridFactor={grid}
               gasFactor={gas}
