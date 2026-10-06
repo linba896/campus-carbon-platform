@@ -24,7 +24,7 @@ import {
 import "./style.css";
 import DataCenter from "./DataCenter.jsx";
 import History from "./History.jsx";
-import { raw } from "./store.js";
+import { raw, sanitizeInternalRow } from "./store.js";
 const fmt = (v) =>
   new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 1 }).format(v);
 function Side({ open, setOpen, view, setView }) {
@@ -198,7 +198,7 @@ function Dashboard({ grid, gas }) {
             {[
               ["本月用电", fmt(b.kwh / 1000) + " MWh"],
               ["碳排放", fmt(b.carbon / 1000) + " tCO₂"],
-              ["碳强度", fmt(b.carbon / b.area) + " kg/m²"],
+              ["碳强度", b.area > 0 ? fmt(b.carbon / b.area) + " kg/m²" : "—"],
               ["环比变化", (b.trend > 0 ? "+" : "") + b.trend + "%"],
             ].map((x) => (
               <dl key={x[0]}>
@@ -504,8 +504,10 @@ function App() {
   useEffect(() => {
     try {
       const saved = JSON.parse(localStorage.getItem("campusCarbonData"));
-      if (saved?.length) {
-        raw.splice(0, raw.length, ...saved);
+      if (Array.isArray(saved) && saved.length) {
+        const clean = saved.map(sanitizeInternalRow).filter(Boolean);
+        if (!clean.length) throw new Error("本地楼宇数据无有效记录");
+        raw.splice(0, raw.length, ...clean);
         setVersion((v) => v + 1);
       }
       const map = localStorage.getItem("campusMapImage");

@@ -10,19 +10,10 @@ import {
   CheckCircle2,
   Download,
 } from "lucide-react";
-import { raw } from "./store.js";
+import { raw, types, finite, clamp, sanitizeInternalRow } from "./store.js";
 import "./data.css";
 import "./map.css";
 
-const types = [
-  "教学楼",
-  "实验楼",
-  "宿舍",
-  "食堂",
-  "公共建筑",
-  "体育馆",
-  "其他",
-];
 const headers = [
   "建筑名称",
   "建筑类型",
@@ -33,9 +24,7 @@ const headers = [
   "横坐标(%)",
   "纵坐标(%)",
 ];
-const finite = (value, fallback = 0) => Number.isFinite(Number(value)) ? Number(value) : fallback;
-const clamp = (value, min, max) => Math.min(max, Math.max(min, finite(value)));
-const normalize = (r) => {
+const normalizeImportRow = (r) => {
   const power = Math.max(0, finite(r[2]));
   return [
     String(r[0] || "未命名建筑").slice(0, 80),
@@ -52,13 +41,15 @@ const normalize = (r) => {
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
 
 function parseDelimited(text) {
-  const lines = text.trim().split(/\r?\n/).filter(Boolean);
+  const lines = text.replace(/^\uFEFF/, "").trim().split(/\r?\n/).filter(Boolean);
   if (lines.length < 2) return [];
   const sep = lines[0].includes("\t") ? "\t" : ",";
+  const header = lines[0].split(sep).map((v) => v.trim().replace(/^"|"$/g, ""));
+  if (header.length < 6 || !header[0].includes("建筑") || !header[2].includes("用电")) return [];
   return lines
     .slice(1)
     .map((line) =>
-      normalize(line.split(sep).map((v) => v.trim().replace(/^"|"$/g, ""))),
+      normalizeImportRow(line.split(sep).map((v) => v.trim().replace(/^"|"$/g, ""))),
     );
 }
 function parseDocText(text) {
@@ -69,7 +60,7 @@ function parseDocText(text) {
     );
     if (hit)
       rows.push(
-        normalize([
+        normalizeImportRow([
           hit[1],
           hit[1].includes("实验")
             ? "实验楼"
@@ -91,13 +82,6 @@ function parseDocText(text) {
 }
 
 export default function DataCenter({ onChange, gridFactor, gasFactor }) {
-  try {
-    const saved = JSON.parse(localStorage.getItem("campusCarbonData"));
-    if (saved?.length && !raw._restored) {
-      raw.splice(0, raw.length, ...saved);
-      raw._restored = true;
-    }
-  } catch {}
   const [fileName, setFileName] = useState(""),
     [message, setMessage] = useState(""),
     [preview, setPreview] = useState(""),
@@ -119,10 +103,15 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
       setMessage("没有识别到结构化楼宇数据，请使用下方表格手工补充。");
       return;
     }
-    try { localStorage.setItem("campusCarbonPreviousData", JSON.stringify(raw)); } catch {}
-    raw.splice(0, raw.length, ...rows.map(normalize));
+    const cleanRows = rows.map(sanitizeInternalRow).filter(Boolean);
+    if (!cleanRows.length) {
+      setMessage("文件中没有有效楼宇记录，现有数据未被修改。");
+      return;
+    }
+    try { localStorage.setItem("campusCarbonPreviousData", JSON.stringify(raw)); } catch { setMessage("无法创建导入前备份，已取消导入以避免数据丢失。请先下载 JSON 备份。"); return; }
+    raw.splice(0, raw.length, ...cleanRows);
     refresh();
-    setMessage(`已导入 ${rows.length} 栋建筑，能碳结果已重新计算。`);
+    setMessage(`已导入 ${cleanRows.length} 栋建筑，能碳结果已重新计算。`);
   };
   const readFile = async (e) => {
     const f = e.target.files?.[0];
@@ -141,7 +130,7 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
         setPreview(text.slice(0, 1200));
         importRows(
           f.name.endsWith(".json")
-            ? (() => { const parsed = JSON.parse(text); if (!Array.isArray(parsed)) throw new Error("JSON 顶层必须为数组"); return parsed.map(normalize); })()
+            ? (() => { const parsed = JSON.parse(text.replace(/^\uFEFF/, "")); if (!Array.isArray(parsed)) throw new Error("JSON 顶层必须为数组"); return parsed; })()
             : parseDelimited(text),
         );
       }
@@ -161,12 +150,13 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
     refresh();
   };
   const remove = (i) => {
+    if (!window.confirm(`确定删除“${raw[i]?.[0] || "未命名建筑"}”吗？`)) return;
     raw.splice(i, 1);
     refresh();
   };
   const download = (name, text, type = "text/csv;charset=utf-8") => {
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob(["\ufeff" + text], { type }));
+    a.href = URL.createObjectURL(new Blob([type.startsWith("application/json") ? text : "\ufeff" + text], { type }));
     a.download = name;
     a.click();
     URL.revokeObjectURL(a.href);
@@ -186,9 +176,11 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
     try {
       const previous = JSON.parse(localStorage.getItem("campusCarbonPreviousData"));
       if (!Array.isArray(previous) || !previous.length) throw new Error();
-      raw.splice(0, raw.length, ...previous.map(normalize));
+      const cleanRows = previous.map(sanitizeInternalRow).filter(Boolean);
+      if (!cleanRows.length) throw new Error();
+      raw.splice(0, raw.length, ...cleanRows);
       refresh();
-      setMessage(`已恢复导入前的 ${previous.length} 栋建筑数据。`);
+      setMessage(`已恢复导入前的 ${cleanRows.length} 栋建筑数据。`);
     } catch {
       setMessage("没有可恢复的导入前数据。");
     }
@@ -391,7 +383,7 @@ export default function DataCenter({ onChange, gridFactor, gasFactor }) {
           className="editable-map"
           ref={mapRef}
           onDragOver={(e) => e.preventDefault()}
-          onDrop={(e) => movePin(e, +e.dataTransfer.getData("pin"))}
+          onDrop={(e) => { const i = Number(e.dataTransfer.getData("pin")); if (Number.isInteger(i) && i >= 0 && i < raw.length) movePin(e, i); }}
         >
           {raw.map((r, i) => (
             <button
